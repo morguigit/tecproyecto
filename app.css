@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Raleway:wght@100;900&display=swap');
+
+/*reglas generales*/
+nav {
+    background: rgb(37, 81, 83);
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+    color: white;
+}
+a {
+    text-decoration: none; color: white;
+}
+    
+h1 { 
+    text-align:center; 
+    }
+
+#Muebles { 
+    color:#037BC0;
+    }
+     
+    .hero {
+        background-image: url(principal.jpg);
+        width: 100%;
+        height: 25rem; 
+        background-size: cover;
+        background-position: center center;
+      }
+    
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+
+/* <Add padding to all of the .container child elements> */
+
+/*Media Query*/
+@media (max-width:890px){
+  #articles article{
+      width:40%;
+  }
+  }
+@media (min-width: 750px) {
+  .navmenu {
+      position: static;
+      width: auto;
+      height: auto;
+      transform: translateX(0%);
+      float: center;
+      display: flex;
+  }
+
+.navmenu a { 
+  border: none;
+}
+
+header label {
+  display: none;
+}
+
+}
+
+
+/** Reescribir colores */
+
+/** Productos */
+
+    h2 { 
+     text-align:center; 
+    }
+
+.container {  display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-template-rows: auto auto auto none none;
+    gap: 20px 20px;
+    grid-template-areas:
+      "Producto1 Producto1 Producto1 Producto1 Producto1 Producto1"
+      "Producto2 Producto2 Producto2 Producto3 Producto3 Producto3"
+      "Producto2 Producto2 Producto2 Producto3 Producto3 Producto3"
+      "Producto4 Producto4 Producto5 Producto5 Producto6 Producto6"
+      "Producto4 Producto4 Producto5 Producto5 Producto6 Producto6";
+  }
+  
+  .Producto1 {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+      "ImgProd1 ImgProd1 TexProd1";
+    grid-area: Producto1;
+  }
+  
+  .ImgProd1 {
+    background-image: url(producto1.jpg);
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    width: 100%;
+    height: 25rem;
+    margin-left: 100px;
+    background-size: cover;
+    background-position: center center;
+    grid-area: ImgProd1; }
+  
+  .TexProd1 {
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px;
+      min-height: auto;
+      margin-right: 100px;
+      font-weight: bold;
+      padding: 20px;
+      position: relative;
+      overflow: hidden;
+      background-size: cover;
+      background-position: center center;
+      grid-area: TexProd1; }
+
+  .Producto2 {  display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+      "ImgProd2"
+      "TextProd2";
+    grid-area: Producto2;
+  }
+  
+  .ImgProd2 { 
+    background-image: url(producto2.jpg);
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    width: auto;
+    height: 25rem;
+    margin-left: 100px;
+    margin-right: 25px;
+    background-size: cover;
+    grid-area: ImgProd2; }
+  
+  .TextProd2 { 
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    min-height: auto;
+    margin-left: 100px;
+    margin-right: 25px;
+    font-weight: bold;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center center;
+    grid-area: TextProd2; }
+  
+  .Producto3 {  display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+      "ImgProd3"
+      "TexProd3";
+    grid-area: Producto3;
+  }
+  
+  .ImgProd3 { 
+    background-image: url(producto3.jpg);
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    width: auto;
+    height: 25rem;
+    margin-right: 100px;
+    margin-left: 25px;
+    background-size: cover;
+    grid-area: ImgProd3; }
+  
+  .TexProd3 { 
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    min-height: auto;
+    margin-right: 100px;
+    margin-left: 25px;
+    font-weight: bold;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center center;
+    grid-area: TexProd3; }
+  
+  .Producto4 {  display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: none;
+    gap: 0px 0px;
+    grid-template-areas:
+      "ImgProd4"
+      "TexProd4";
+    grid-area: Producto4;
+  }
+  
+  .ImgProd4 { 
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    max-width: 100%;
+    height: auto;
+    margin-left: 100px;
+    background-position: cover;
+    grid-area: ImgProd4; }
+  
+  .TexProd4 { 
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    min-height: auto;
+    margin-left: 100px;
+    font-weight: bold;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center center;
+    grid-area: TexProd4; }
+  
+  .Producto5 {  display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: none;
+    gap: 0px 0px;
+    grid-template-areas:
+      "ImgProd5"
+      "TexProd5";
+    grid-area: Producto5;
+  }
+  
+  .ImgProd5 { 
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+    max-width: 100%;
+    height: auto;
+    background-position: cover;
+    grid-area: ImgProd5; }
+  
+  .TexProd5 { 
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-weight: bold;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center center;
+    grid-area: TexProd5; }
+  
+  .Producto6 {  display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: min-content;
+    gap: 0px 0px;
+    grid-template-areas:
+      "ImgProd6"
+      "TexProd6";
+    grid-area: Producto6;
+  }
+  
+  .ImgProd6 { 
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    max-width: 100%;
+    height: auto;
+    margin-right: 100px;
+    background-position: center center;
+    grid-area: ImgProd6; }
+  
+  .TexProd6 { 
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    min-height: auto;
+    margin-right: 100px;
+    font-weight: bold;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center center;
+    grid-area: TexProd6; }
+  
+    .fit {
+      width: 100%;
+      height: 100%;
+    }         
+
+    .boton {
+        background: green;
+        display: block;
+        width: 100%;
+        font-weight: bold;
+        font-size: 14px;
+        text-decoration-color: white;
+        text-align: center;
+        padding: 10px;
+        border: none;
+        border-radius: 100px;
+        font-family: 'Roboto', sans-serif;
+        cursor: pointer;
+    }
+
+
+/** Categorias */
+
+    .FlexContainer {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      align-content: flex-start;
+      width: 100%;
+      height: 80vh;
+      overflow: auto;
+      flex-direction: row;
+  }
+  
+  .FlexContainer div {
+      width: 30%;
+      height: auto;
+      margin: 5px;
+      text-align: center;
+  }
+
+/** Footer */
+
+footer{
+    margin:0px;
+    position: relative;
+    list-style: none
+}
+
+
+.copyright{
+    color: white;
+    padding-block: 15px;
+    background-color: #037BC0;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.footercontainer{
+    color: black;
+    text-align: center;
+    padding-block: 15px;
+    background-color: rgb(222,222,222);
+    width: 100%;
+}
+
+.footercontainer{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+article {
+    margin: 15px;
+    width: 200px;
+}
